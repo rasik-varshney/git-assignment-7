@@ -1,0 +1,115 @@
+.container, .content {
+    width: 100%;
+    height: 100%;
+    }
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* code start for the 1st container  */
+    
+    .container-1{
+        background-color: #f2f2f2;
+        display: flex;
+        padding: 100px 50px;
+        margin-bottom: 50px;
+        height: 80vh;
+        box-shadow: 2px 2px 5px gray;
+    }
+    .container-1 .details-1{
+        flex: 1;
+        padding: 50px;
+    }
+    .details-1 h1, .details-1 p{
+        margin-bottom: 25px;
+    }
+    .details-1 p{
+        font-size: 1.25rem;
+    }
+    .details-1 button{
+        background-color: #000;
+        color: #fff;
+        border: none;
+        padding: 15px 25px;
+        letter-spacing: 1px;
+        font-size: 1rem;
+        border-radius: 4px;
+    }
+    .container-1 #render-wiki{
+        flex: 1;
+    }
+    .render-1{
+        display: block;
+        margin: auto auto;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        box-shadow: 10px 10px 15px grey;
+    }
+    .render-1:hover{
+        border: 1px solid rgb(107, 107, 168);
+    }
+    /* end of 1st container  */
+    
+    
+    
+    /* code start for 2nd container  */
+    .container-2{
+        background-color: #f2f2f2;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: 100%;
+        box-shadow: 2px 2px 5px gray;
+    }
+    .container-2 div{
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .details-2{
+        padding: 5% 10%;
+        margin-bottom: 100px;
+    }
+    .details-2 h1, .details-2 p{
+        margin-bottom: 25px;
+    }
+    .details-2 p{
+        font-size: 1.25rem;
+    }
+    .details-2 button{
+        background-color: #000;
+        color: #fff;
+        border: none;
+        padding: 15px 25px;
+        letter-spacing: 1px;
+        font-size: 1rem;
+        border-radius: 4px;
+    }
+    .render-me .render-2{
+        margin-top: 50px;
+        padding: 20px;
+        width: 100%;
+        height: 70vh;
+        box-shadow: 10px 10px 15px grey;
+        border-radius: 25px;
+    }
+    .render-2:hover{
+        border-right: 2px solid orangered;
+        border-top: 2px solid blue;
+        border-bottom: 3px solid rgb(27, 158, 27);
+    }
+    /* code end for 2nd container  */
+    
+    
+    @media screen  and (max-width: 668px){
+        .container-1{
+            flex-direction: column;
+        }
+    }
